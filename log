@@ -56,3 +56,14 @@ hashmap.c:49:40: error: expected statement before ')' token
 cc1.exe: all warnings being treated as errors
 Compilation failed
 9d597c5
+Thu Apr  7 12:05:54 HSP 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'insertMap':
+hashmap.c:49:40: error: expected ';' before ')' token
+         idx = (idx + 1) % map->capacity);
+                                        ^
+hashmap.c:49:40: error: expected statement before ')' token
+Compilation failed
+2b46ead
