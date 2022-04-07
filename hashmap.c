@@ -59,7 +59,7 @@ HashMap * createMap(long capacity) {
 
 
 
-    return NULL;
+    return aux;
 }
 
 void eraseMap(HashMap * map,  char * key) {    
