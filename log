@@ -41,3 +41,18 @@ Thu Apr  7 11:41:46 HSP 2022:
  tests:  1|5
 total_score: 10/70
 2159248
+Thu Apr  7 12:05:17 HSP 2022: 
+ hashmap.c | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+In file included from test.c:4:0:
+hashmap.c: In function 'insertMap':
+hashmap.c:44:16: error: implicit declaration of function 'Hash' [-Werror=implicit-function-declaration]
+     long idx = Hash(key, map->capacity);
+                ^~~~
+hashmap.c:49:40: error: expected ';' before ')' token
+         idx = (idx + 1) % map->capacity);
+                                        ^
+hashmap.c:49:40: error: expected statement before ')' token
+cc1.exe: all warnings being treated as errors
+Compilation failed
+9d597c5
