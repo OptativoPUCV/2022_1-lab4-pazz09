@@ -21,3 +21,17 @@ Thu Apr  7 11:32:21 HSP 2022:
  1 file changed, 2 insertions(+)
  tests:  0|0
 8af4a69
+Thu Apr  7 11:41:13 HSP 2022: 
+ hashmap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'createMap':
+hashmap.c:59:28: error: too few arguments to function 'calloc'
+     aux->buckets = (Pair**)calloc(capacity*sizeof(Pair*));
+                            ^~~~~~
+In file included from test.c:2:0:
+c:\mingw\include\stdlib.h:484:40: note: declared here
+ _CRTIMP __cdecl __MINGW_NOTHROW  void *calloc (size_t, size_t) __MINGW_ATTRIB_MALLOC;
+                                        ^~~~~~
+Compilation failed
+4276eba
