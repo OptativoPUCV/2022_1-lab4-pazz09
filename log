@@ -67,3 +67,9 @@ hashmap.c:49:40: error: expected ';' before ')' token
 hashmap.c:49:40: error: expected statement before ')' token
 Compilation failed
 2b46ead
+Thu Apr  7 12:06:51 HSP 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+5f14aaf
