@@ -54,7 +54,7 @@ HashMap * createMap(long capacity) {
 
     HashMap *aux;
 
-    aux = (HashMap*) malloc(sizeof(HashMap));
+    aux = (HashMap*) malloc(capacity*sizeof(HashMap));
     aux->current= -1;
 
 
