@@ -177,3 +177,9 @@ Sun Apr 10 11:33:16 HSP 2022:
  1 file changed, 2 insertions(+), 1 deletion(-)
  tests:  0|0
 896d0a0
+Sun Apr 10 11:33:52 HSP 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  12|2
+total_score: 50/70
+13f3285
