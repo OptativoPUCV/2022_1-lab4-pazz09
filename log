@@ -241,3 +241,14 @@ Sun Apr 10 12:12:15 HSP 2022:
  tests:  16|1
 total_score: 60/70
 c704beb
+Sun Apr 10 15:27:03 HSP 2022: 
+ hashmap.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:82:12: error: variable 'aux' set but not used [-Werror=unused-but-set-variable]
+     Pair **aux;
+            ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+4126123

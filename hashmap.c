@@ -79,6 +79,13 @@ e - Inserte los elementos del arreglo *old_buckets* en el mapa (use la función 
 */
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
+    Pair **aux;
+    aux = map->buckets;
+    map->capacity = map->capacity*2;
+    map->size = 0;
+
+
+
 
 
 }
@@ -132,13 +139,6 @@ Pair * searchMap(HashMap * map,  char * key) {
     } 
     return NULL;
 }
-
-/*
-Implemente las funciones para recorrer la estructura: Pair * firstMap(HashMap * map) retorna el primer **Pair**
- válido del arreglo buckets. Pair * nextMap(HashMap * map) retorna el siguiente **Pair** del arreglo buckets a partir 
- índice current. Recuerde actualizar el índice.
-
-*/
 
 Pair * firstMap(HashMap * map) {
 
