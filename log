@@ -85,3 +85,23 @@ Sun Apr 10 01:25:57 HSP 2022:
  tests:  5|4
 total_score: 30/70
 495a8b5
+Sun Apr 10 01:36:07 HSP 2022: 
+ hashmap.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:94:51: error: comparison between pointer and integer [-Werror]
+         if ( is_equal(key,map->buckets[idx]->key) == NULL) return;
+                                                   ^~
+hashmap.c:94:60: error: 'return' with no value, in function returning non-void [-Werror]
+         if ( is_equal(key,map->buckets[idx]->key) == NULL) return;
+                                                            ^~~~~~
+hashmap.c:88:8: note: declared here
+ Pair * searchMap(HashMap * map,  char * key) {
+        ^~~~~~~~~
+hashmap.c:99:12: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+     return idx;
+            ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+4b877c9
