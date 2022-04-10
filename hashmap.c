@@ -152,12 +152,13 @@ Pair * firstMap(HashMap * map) {
         }
     }
     return NULL;
+
 }
 
 Pair * nextMap(HashMap * map){
 
     long i;
-    for ( i = map->current; i < map->capacity; i++){
+    for ( i = map->current+1; i < map->capacity-1; i = ((i + 1) % map->capacity)){
         if (map->buckets[i] != NULL && map->buckets[i]->key != NULL){
             map->current = i;
             return map->buckets[i];
