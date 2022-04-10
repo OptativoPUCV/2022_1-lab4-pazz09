@@ -252,3 +252,14 @@ hashmap.c:82:12: error: variable 'aux' set but not used [-Werror=unused-but-set-
 cc1.exe: all warnings being treated as errors
 Compilation failed
 4126123
+Sun Apr 10 17:39:55 HSP 2022: 
+ hashmap.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:82:12: error: variable 'old_buckets' set but not used [-Werror=unused-but-set-variable]
+     Pair **old_buckets;
+            ^~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+d76667b
