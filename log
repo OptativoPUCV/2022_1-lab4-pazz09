@@ -105,3 +105,20 @@ hashmap.c:99:12: error: return makes pointer from integer without a cast [-Werro
 cc1.exe: all warnings being treated as errors
 Compilation failed
 4b877c9
+Sun Apr 10 01:38:03 HSP 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:94:57: error: 'return' with no value, in function returning non-void [-Werror]
+         if ( is_equal(key,map->buckets[idx]->key) == 0) return;
+                                                         ^~~~~~
+hashmap.c:88:8: note: declared here
+ Pair * searchMap(HashMap * map,  char * key) {
+        ^~~~~~~~~
+hashmap.c:99:12: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+     return idx;
+            ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c95db54

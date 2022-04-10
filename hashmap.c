@@ -91,7 +91,7 @@ Pair * searchMap(HashMap * map,  char * key) {
 
     while ( map->buckets[idx] != NULL && map->buckets[idx]->key != NULL){
 
-        if ( is_equal(key,map->buckets[idx]->key) == NULL) return;
+        if ( is_equal(key,map->buckets[idx]->key) == 0) return;
         
     }
     map->current = idx; 
