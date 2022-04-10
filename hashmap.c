@@ -143,7 +143,19 @@ Implemente las funciones para recorrer la estructura: Pair * firstMap(HashMap * 
 Pair * firstMap(HashMap * map) {
 
     long i;
-    for ( i = 0; i < map->capacity; i++){
+
+    i = 0;
+    i = ( i + 1)% map->capacity;
+    if(map->current == map->capacity){
+        return NULL;
+    }
+    while ( map->buckets[i] == NULL || map->buckets[i]->key == NULL){
+        i = (i + 1)% map->capacity;
+    }
+    return map->buckets[i];
+
+
+   /* for ( i = 0; i < map->capacity; i++){
 
         if (map->buckets[i]->value != NULL || map->buckets[i]->key != NULL){
             map->current = i;
@@ -152,9 +164,39 @@ Pair * firstMap(HashMap * map) {
     }
     return NULL;
 }
-
+*/
 Pair * nextMap(HashMap * map){
 
+    long i;
+
+    i = map->current;
+    i = ( i + 1)% map->capacity;
+    if(map->current == map->capacity){
+        return NULL;
+    }
+    while ( map->buckets[i] == NULL || map->buckets[i]->key == NULL){
+        i = (i + 1)% map->capacity;
+    }
+    map->current = i;
+    if(i = 0) return NULL;
+    return map->buckets[i];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
     long i;
     for ( i = map->current; i < map->capacity; i++){
         if (map->buckets[i]->value != NULL && map->buckets[i]->key != NULL){
@@ -163,5 +205,5 @@ Pair * nextMap(HashMap * map){
         }
     }
     return NULL;
-
+*/
 }
