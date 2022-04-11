@@ -283,3 +283,20 @@ Sun Apr 10 20:45:30 HSP 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 abbc182
+Sun Apr 10 20:46:10 HSP 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:94:22: error: 'HashMap {aka struct HashMap}' has no member named 'old_buckets'; did you mean 'buckets'?
+         insertMap(map->old_buckets[i]->key, old_buckets[i]->value);
+                      ^~
+hashmap.c:94:9: error: too few arguments to function 'insertMap'
+         insertMap(map->old_buckets[i]->key, old_buckets[i]->value);
+         ^~~~~~~~~
+In file included from test.c:4:0:
+hashmap.c:42:6: note: declared here
+ void insertMap(HashMap * map, char * key, void * value) {
+      ^~~~~~~~~
+Compilation failed
+be41919
