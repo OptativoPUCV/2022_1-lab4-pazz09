@@ -278,3 +278,8 @@ c:\mingw\include\stdlib.h:484:40: note: expected 'size_t {aka unsigned int}' but
 cc1.exe: all warnings being treated as errors
 Compilation failed
 1cacd33
+Sun Apr 10 20:45:30 HSP 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+abbc182
